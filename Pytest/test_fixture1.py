@@ -1,15 +1,17 @@
 import pytest
 from selenium import webdriver
+from selenium.webdriver.chrome.service import Service
 
 driver = None
 
 
 @pytest.fixture()
 def setup():
-    global driver
-    driver = webdriver.chrome
-    #driver.maximise_window
     print("Start the browser")
+    global driver
+    svc = Service()
+    driver = webdriver.Chrome()
+    driver.maximize_window()
     yield
     driver.quit()
     print("close the browser")

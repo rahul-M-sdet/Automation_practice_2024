@@ -2,6 +2,8 @@ import pytest
 from selenium import webdriver
 
 driver = None
+
+
 @pytest.fixture()
 def setup():
     print("Start the browser")
