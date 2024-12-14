@@ -1,5 +1,5 @@
 import openpyxl
-
+# file/workbook/sheet/loop/save
 file = "C:\\Users\\RAHUL\\OneDrive\\ドキュメント\\Data.xlsx"
 workbook = openpyxl.load_workbook(file)
 sheet = workbook.active

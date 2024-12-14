@@ -1,7 +1,7 @@
 def find_missing_number(l1):
     n = len(l1) + 1  # including missing number
-    Expected_result = n * (n + 1) // 2
-    Actual_result = sum(l1)
+    Expected_result = n * (n + 1) // 2   # sum of n natural number
+    Actual_result = sum(l1)     # actual sum
     missing_number = Expected_result - Actual_result
     return missing_number
 
